@@ -1,2 +1,2 @@
 #!/bin/sh
-curl $1 | grep '\<a(.*)'
+curl $1 -s | grep -Pzo '<a(.*?)>'
